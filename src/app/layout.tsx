@@ -29,8 +29,7 @@ const RootLayout = ({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
           key="@2n/theme"
         >
           {children}

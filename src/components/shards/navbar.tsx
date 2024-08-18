@@ -16,7 +16,7 @@ import { useEffect } from "react"
 
 export const Navbar = () => {
   const params = useParams()
-  const itemId = window.location.hash;
+  const itemId = window?.location.hash;
 
   useEffect(() => {
     console.log(params, itemId)
