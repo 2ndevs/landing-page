@@ -18,7 +18,7 @@ export const Hero = () => (
     </div>
 
     <WordFadeIn
-      className="text-8xl font-bold text-gray-400 leading-none tracking-tighter text-balance"
+      className="sm:text-8xl text-5xl font-bold text-gray-400 leading-none tracking-tighter text-balance"
       words="Lorem ipsum dolor sit amet consectetur adipisicing elit."
     />
 
