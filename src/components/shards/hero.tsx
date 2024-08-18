@@ -17,10 +17,12 @@ export const Hero = () => (
       </AnimatedShinyText>
     </div>
 
-    <WordFadeIn
-      className="sm:text-8xl text-5xl font-bold text-gray-400 leading-none tracking-tighter text-balance"
-      words="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    />
+    <div className="bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text p-4">
+      <WordFadeIn
+        className="sm:text-6xl md:text-7xl lg:text-8xl text-5xl font-bold leading-none tracking-tighter text-balance text-transparent dark:text-transparent"
+        words="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      />
+    </div>
 
     <WordFadeIn
       className="text-lg tracking-tight font-normal text-gray-400 md:text-xl text-balance"
