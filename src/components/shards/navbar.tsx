@@ -6,13 +6,24 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
+import { Box } from "lucide-react"
+import Link from "next/link"
 
 export const Navbar = () => {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="mx-auto">
       <NavigationMenuList>
+        <NavigationMenuItem>
+          <Link href="/" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <Box />
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
         <NavigationMenuItem>
           <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
 
