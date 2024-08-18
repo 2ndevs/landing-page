@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/shards/navbar";
+import { Hero } from "@components/shards/hero";
 
 const Home = () => {
   return <div className="max-w-screen-lg">
@@ -6,10 +7,10 @@ const Home = () => {
     <Navbar />
 
     {/* # Body */}
-    
+    <Hero />
 
     {/* # Footer */}
-  </div>;
+  </div>
 };
 
 export default Home;
