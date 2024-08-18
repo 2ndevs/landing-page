@@ -9,7 +9,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "2n devs",
+  title: "2n.dev",
 };
 
 const RootLayout = ({

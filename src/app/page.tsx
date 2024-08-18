@@ -1,5 +1,11 @@
 const Home = () => {
-  return <h1>hello world</h1>;
+  return <div className="max-w-screen-lg">
+    {/* # Navigation */}
+
+    {/* # Body */}
+
+    {/* # Footer */}
+  </div>;
 };
 
 export default Home;
