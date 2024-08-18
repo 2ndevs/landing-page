@@ -29,9 +29,9 @@ const RootLayout = ({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
+          key="@2n/theme"
         >
           {children}
         </ThemeProvider>
