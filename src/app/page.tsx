@@ -1,12 +1,16 @@
+import { Hero } from "@components/shards/hero";
+
 const Home = () => {
-  return <div className="max-w-screen-lg">
-    {/* # Navigation */}
+  return (
+    <div className="max-w-screen-lg">
+      {/* # Navigation */}
 
-    {/* # Body */}
-    
+      {/* # Body */}
+      <Hero />
 
-    {/* # Footer */}
-  </div>;
+      {/* # Footer */}
+    </div>
+  );
 };
 
 export default Home;
