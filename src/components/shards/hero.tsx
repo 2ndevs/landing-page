@@ -5,7 +5,7 @@ import { Button } from "@components/ui/button";
 import { ArrowRightIcon } from "lucide-react";
 
 export const Hero = () => (
-  <section className="flex flex-col w-full items-center justify-center gap-6">
+  <section className="flex flex-col w-full items-center justify-center gap-6 mt-24">
     <div
       className={cn(
         "group rounded-full border border-muted/10 text-base text-white transition-all ease-in hover:cursor-pointer dark:border-white/5 bg-zinc-900"
