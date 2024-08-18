@@ -23,13 +23,15 @@ const RootLayout = ({
       <head />
       <body
         className={cn(
-          "min-h-screen w-full bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased flex w-full justify-center pt-[4.5rem]",
           fontSans.variable
         )}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
+          enableSystem
+          key="@2n/theme"
         >
           {children}
         </ThemeProvider>
