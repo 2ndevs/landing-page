@@ -5,7 +5,7 @@ import { Button } from "@components/ui/button";
 import { ArrowRightIcon } from "lucide-react";
 
 export const Hero = () => (
-  <section className="flex flex-col w-full items-center justify-center gap-6">
+  <section className="flex flex-col w-full items-center justify-center gap-6 mt-24">
     <div
       className={cn(
         "group rounded-full border border-muted/10 text-base text-white transition-all ease-in hover:cursor-pointer dark:border-white/5 bg-zinc-900"
@@ -17,12 +17,12 @@ export const Hero = () => (
       </AnimatedShinyText>
     </div>
 
-    <div className="bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text p-4">
+    {/* <div className="bg-gradient-to-br dark:from-foreground from-background from-30% dark:to-foreground/40 to-background/40 bg-clip-text p-4"> */}
       <WordFadeIn
-        className="sm:text-6xl md:text-7xl lg:text-8xl text-5xl font-bold leading-none tracking-tighter text-balance text-transparent dark:text-transparent"
+        className="sm:text-6xl md:text-7xl lg:text-8xl text-5xl font-bold leading-none tracking-tighter text-balance"
         words="Lorem ipsum dolor sit amet consectetur adipisicing elit."
       />
-    </div>
+    {/* </div> */}
 
     <WordFadeIn
       className="text-lg tracking-tight font-normal text-gray-400 md:text-xl text-balance"
