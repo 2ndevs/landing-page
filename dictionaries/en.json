@@ -1,0 +1,12 @@
+{
+	"header": {
+		"highlights": "Highlights",
+		"projects": "Projects"
+	},
+	"hero": {
+		"introducing": "Introducing 2n Dev's",
+		"title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		"subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam consequatur dicta in quod ratione harum itaque explicabo et quas distinctio.",
+		"actionButton": "Something here"
+	}
+}
