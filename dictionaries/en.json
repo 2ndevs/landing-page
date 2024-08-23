@@ -1,12 +1,12 @@
 {
-	"header": {
-		"highlights": "Highlights",
-		"projects": "Projects"
-	},
-	"hero": {
-		"introducing": "Introducing 2n Dev's",
-		"title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-		"subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam consequatur dicta in quod ratione harum itaque explicabo et quas distinctio.",
-		"actionButton": "Something here"
-	}
+  "header": {
+    "highlights": "Highlights",
+    "projects": "Projects"
+  },
+  "hero": {
+    "introducing": "Introducing 2n Dev's",
+    "title": "Custom and High-Performance Software for Your Business.",
+    "subtitle": "Innovative and tailored solutions, built with cutting-edge technologies to meet your specific needs.",
+    "actionButton": "Contact us"
+  }
 }
