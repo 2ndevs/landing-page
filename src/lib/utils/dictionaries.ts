@@ -5,9 +5,9 @@ import { getLocale } from "./get-locale";
 
 const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   en: () =>
-    import("../../dictionaries/en.json").then((module) => module.default),
+    import("../../../dictionaries/en.json").then((module) => module.default),
   pt: () =>
-    import("../../dictionaries/pt.json").then((module) => module.default),
+    import("../../../dictionaries/pt.json").then((module) => module.default),
 };
 
 export const getDictionary = async (locale?: Locale): Promise<Dictionary> => {

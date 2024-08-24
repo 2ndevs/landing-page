@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { getDictionary } from "@/utils/dictionaries";
+import { getDictionary } from "@/lib/utils/dictionaries";
 import AnimatedShinyText from "@components/magicui/animated-shiny-text";
 import WordFadeIn from "@components/magicui/word-fade-in";
 import { Button } from "@components/ui/button";
