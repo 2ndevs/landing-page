@@ -8,8 +8,14 @@ interface BoxFadeInProps {
   delay?: number;
   duration?: number
   variants?: Variants;
-  direction?: "up" | "down"
+  direction?: "up" | "down" | "none"
   children: ReactNode
+}
+
+const directionAxisShift = {
+  up: -10,
+  down: 10,
+  none: 0
 }
 
 export default function BoxFadeIn({
@@ -30,7 +36,7 @@ export default function BoxFadeIn({
         },
         hidden: {
           opacity: 0,
-          y: direction === "up" ? -10 : 10
+          y: directionAxisShift[direction]
         },
         ...variants
       }}

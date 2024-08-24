@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import { getDictionary } from "@/lib/utils/dictionaries";
-import AnimatedGradientText from "@components/magicui/animated-gradient-text";
 import AnimatedShinyText from "@components/magicui/animated-shiny-text";
 import BoxFadeIn from "@components/magicui/box-fade-in";
 import SparklesText from "@components/magicui/sparkles-text";
@@ -14,8 +13,8 @@ export const Hero = async () => {
   return (
     <section className="flex flex-col w-full items-center justify-center gap-6 mt-14">
       <BoxFadeIn
+        direction="none"
         delay={0.1}
-        direction="down"
         className={cn(
           "group rounded-full border border-muted/10 text-base transition-all ease-in hover:cursor-pointer dark:border-foreground/10 bg-muted/45"
         )}
