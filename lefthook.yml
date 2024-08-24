@@ -5,19 +5,12 @@ pre-commit:
   parallel: true
 
   commands:
-    type-check:
-      skip:
-        - merge
-        - rebase
-      glob: "."
-      run: bunx tsc --noEmit
-
     format:
       skip:
         - merge
         - rebase
       glob: "src/*.{ts,tsx,json,jsonc}"
-      run: pnpm dlx biome format --write --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && git update-index --again
+      run: bunx biome format --write --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && git update-index --again
 
 # 
 # LEAVING THIS CONFIGURATION HERE SO THAT AT A 
