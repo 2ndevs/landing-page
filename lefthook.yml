@@ -1,0 +1,40 @@
+# Refer for explanation to following link:
+# https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
+
+pre-commit:
+  parallel: true
+
+  commands:
+    type-check:
+      skip:
+        - merge
+        - rebase
+      glob: "src/*.{ts,tsx}"
+      run: bunx tsc --noEmit {staged_files}
+
+    format:
+      skip:
+        - merge
+        - rebase
+      glob: "src/*.{ts,tsx,json,jsonc}"
+      run: pnpm dlx biome format --write --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && git update-index --again
+
+# 
+# LEAVING THIS CONFIGURATION HERE SO THAT AT A 
+# LATER POINT IN THE PROJECT WE HAVE IT READY TO GO
+#
+# prepare-commit-msg:
+#   commands:
+#     commitzen:
+#       interactive: true
+#       run: exec < /dev/tty && bunx cz --hook || true
+#       env:
+#         LEFTHOOK: 0
+#
+# commit-msg:
+#   commands:
+#     commitlint:
+#       skip:
+#         - merge
+#         - rebase
+#       run: bunx commitlint --edit {1}
