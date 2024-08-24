@@ -16,23 +16,23 @@ export const Hero = async () => {
         )}
       >
         <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-          <span>✨ {dict.hero.introducing}</span>
+          <span>✨ {dict?.hero?.introducing}</span>
           <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
         </AnimatedShinyText>
       </div>
 
       <WordFadeIn
         className="sm:text-6xl md:text-7xl lg:text-8xl text-5xl font-bold leading-none tracking-tighter text-balance text-transparent bg-gradient-to-br from-white from-30% to-white/40 bg-clip-text py-6"
-        words={dict.hero.title}
+        words={dict?.hero?.title}
       />
 
       <WordFadeIn
         className="text-lg tracking-tight font-normal text-gray-400 md:text-xl text-balance"
-        words={dict.hero.subtitle}
+        words={dict?.hero?.subtitle}
       />
 
       <Button className="group mt-12">
-        {dict.hero.actionButton}
+        {dict?.hero?.actionButton}
         <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
       </Button>
     </section>

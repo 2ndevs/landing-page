@@ -9,8 +9,8 @@ pre-commit:
       skip:
         - merge
         - rebase
-      glob: "src/*.{ts,tsx}"
-      run: bunx tsc --noEmit {staged_files}
+      glob: "."
+      run: bunx tsc --noEmit
 
     format:
       skip:

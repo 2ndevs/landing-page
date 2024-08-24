@@ -24,7 +24,7 @@ export default function WordFadeIn({
   },
   className,
 }: WordFadeInProps) {
-  const _words = words.split(" ");
+  const _words = words?.split(" ") ?? [];
 
   return (
     <motion.h1
