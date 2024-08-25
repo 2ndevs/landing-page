@@ -5,19 +5,13 @@ pre-commit:
   parallel: true
 
   commands:
-    lint:
+    check:
       skip:
         - merge
         - rebase
       glob: "src/*.{ts,tsx,json,jsonc}"
-      run: bunx biome check --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}
-
-    format:
-      skip:
-        - merge
-        - rebase
-      glob: "src/*.{ts,tsx,json,jsonc}"
-      run: bunx biome format --write --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && git update-index --again
+      run: bunx @biomejs/biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+      stage_fixed: true
 
 # 
 # LEAVING THIS CONFIGURATION HERE SO THAT AT A 
