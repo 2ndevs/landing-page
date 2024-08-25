@@ -1,13 +1,19 @@
-import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
-import WordFadeIn from "@components/magicui/word-fade-in";
+import { env } from "@/env";
+import { BorderBeam } from "@components/magicui/border-beam";
 import Image from "next/image";
 
 export const ShowCaseCard = () => {
+  const imageURL = new URL("/hero-dark.png", env.NEXT_PUBLIC_APP_URL);
   return (
-    <NeonGradientCard className="my-20 items-center justify-center text-center h-full max-h-[25rem]">
-      <div className="w-full h-full items-center justify-center flex text-5xl font-bold">
-        <WordFadeIn words="something" />
-      </div>
-    </NeonGradientCard>
+    <div className="relative h-[31.25rem] w-full overflow-hidden rounded-lg mt-12 leading-none ">
+      <Image
+        className="object-cover"
+        alt="Show case card image"
+        src={imageURL.toString()}
+        height={500}
+        width={1024}
+      />
+      <BorderBeam size={250} duration={12} delay={9} />
+    </div>
   );
 };
