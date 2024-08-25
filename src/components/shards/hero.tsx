@@ -22,7 +22,7 @@ export const Hero = async () => {
       </div>
 
       <WordFadeIn
-        className="sm:text-6xl md:text-7xl lg:text-8xl text-5xl font-bold leading-none tracking-tighter text-balance text-transparent bg-gradient-to-br from-white from-30% to-white/40 bg-clip-text py-6"
+        className="sm:text-6xl md:text-7xl lg:text-8xl text-5xl font-bold leading-none tracking-tighter text-balance text-transparent bg-gradient-to-br from-white from-30% to-white/40 bg-clip-text pb-6"
         words={dict?.hero?.title}
       />
 
@@ -31,7 +31,7 @@ export const Hero = async () => {
         words={dict?.hero?.subtitle}
       />
 
-      <Button className="group mt-12">
+      <Button className="group mt-6">
         {dict?.hero?.actionButton}
         <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
       </Button>

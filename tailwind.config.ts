@@ -75,11 +75,17 @@ const config = {
             "background-position": "calc(100% + var(--shimmer-width)) 0",
           },
         },
+        "background-position-spin": {
+          "0%": { backgroundPosition: "top center" },
+          "100%": { backgroundPosition: "bottom center" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         shimmer: "shimmer 8s infinite",
+        backgroundPositionSpin:
+          "background-position-spin 3000ms infinite alternate",
       },
     },
   },
