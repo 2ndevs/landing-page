@@ -5,6 +5,13 @@ pre-commit:
   parallel: true
 
   commands:
+    lint:
+      skip:
+        - merge
+        - rebase
+      glob: "src/*.{ts,tsx,json,jsonc}"
+      run: bunx biome check --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}
+
     format:
       skip:
         - merge
