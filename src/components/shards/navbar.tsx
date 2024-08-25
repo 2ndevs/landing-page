@@ -7,21 +7,14 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { useParamsHash } from "@/lib/hooks/useParamsHash";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Box } from "lucide-react";
 import Link from "next/link";
-import { useParams } from "next/navigation";
-import { useEffect } from "react";
 
 export const Navbar = () => {
-  const params = useParams();
-  // const itemId = window?.location.hash;
-  const itemId = "" as string;
-
-  // useEffect(() => {
-  //   console.log(params, itemId)
-  // }, [params])
+  const hash = useParamsHash() ?? ""
 
   return (
     <NavigationMenu className="fixed left-1/2 top-4 -translate-x-1/2 px-2 py-1 bg-muted/20 backdrop-blur-sm rounded-lg border border-muted">
@@ -35,7 +28,7 @@ export const Navbar = () => {
             </NavigationMenuLink>
           </Link>
 
-          {!itemId?.length && (
+          {!hash?.length && (
             <motion.div
               layoutId="navigation-background"
               className={cn("absolute inset-0 bg-muted -z-10 rounded")}
@@ -55,7 +48,7 @@ export const Navbar = () => {
             </NavigationMenuLink>
           </Link>
 
-          {itemId === "#highlights" && (
+          {hash === "#highlights" && (
             <motion.div
               layoutId="navigation-background"
               className={cn("absolute inset-0 bg-muted -z-10 rounded")}
@@ -75,7 +68,7 @@ export const Navbar = () => {
             </NavigationMenuLink>
           </Link>
 
-          {itemId === "#projects" && (
+          {hash === "#projects" && (
             <motion.div
               layoutId="navigation-background"
               className={cn("absolute inset-0 bg-muted -z-10 rounded")}

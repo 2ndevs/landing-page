@@ -16,6 +16,12 @@ const getLocale = (request: NextRequest) => {
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  const extension = pathname.split(".")?.pop()?.toLowerCase();
+  if (["png", "jpeg", "jpg"].includes(extension ?? "")) {
+    return NextResponse.next({ headers: { locale: "en" } });
+  }
+
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
