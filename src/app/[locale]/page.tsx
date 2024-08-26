@@ -4,7 +4,7 @@ import { Hero } from "@components/shards/hero";
 
 const Home = () => {
   return <>
-    <div className="max-w-screen-lg">
+    <div className="max-w-screen-xl">
       <Navbar />
       <Hero />
       {/* # Footer */}

@@ -6,6 +6,7 @@ export type Dictionary = {
   hero: {
     introducing: string;
     title: string;
+    "title-highlight": string;
     subtitle: string;
     actionButton: string;
   };
