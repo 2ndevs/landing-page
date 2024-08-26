@@ -2,6 +2,7 @@ import { Navbar } from "@components/shards/navbar";
 import Particles from "@components/magicui/particles";
 import { Hero } from "@components/shards/hero";
 import { OurServices } from "@components/shards/our-services";
+import { ShowCaseCard } from "@components/shards/show-case-card";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <div className="max-w-screen-lg">
         <Navbar />
         <Hero />
+        <ShowCaseCard />
         <OurServices />
         {/* # Footer */}
       </div>
