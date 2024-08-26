@@ -1,13 +1,30 @@
 {
-  "header": {
-    "highlights": "Highlights",
-    "projects": "Projects"
-  },
-  "hero": {
-    "introducing": "Introducing 2n Devs",
-    "title": "Custom and High-Performance Software for ",
-    "title-highlight": "YOUR BUSINESS.",
-    "subtitle": "Innovative and tailored solutions, built with cutting-edge technologies to meet your specific needs.",
-    "actionButton": "Contact us"
-  }
+	"header": {
+		"highlights": "Highlights",
+		"projects": "Projects"
+	},
+	"hero": {
+		"introducing": "Introducing 2n Devs",
+		"title": "Custom and High-Performance Software for ",
+		"title-highlight": "YOUR BUSINESS.",
+		"subtitle": "Innovative and tailored solutions, built with cutting-edge technologies to meet your specific needs.",
+		"actionButton": "Contact us"
+	},
+	"our-services": {
+		"subtitle": "Our services",
+		"title": "What we can do for You",
+		"paragraph": "Discover the Perfect Service for Your Needs. Whether you're looking for a custom software solution, a powerful landing page, or a complete product tailored to your business, we've got you covered.",
+		"custom-softwares": {
+			"title": "Custom software",
+			"paragraph": "Transform your idea into a unique software solution. We develop custom applications tailored to the specific needs of your business, delivering high-performance and full adaptability. Let us help drive your success with technology made just for you."
+		},
+		"landing-page": {
+			"title": "Landing page",
+			"paragraph": "Maximize your online presence with an impactful and effective landing page. We create optimized landing pages that capture the essence of your product or service. Reach your audience in a direct and powerful way with stunning design and cutting-edge functionality."
+		},
+		"complete-softwares": {
+			"title": "Complete software",
+			"paragraph": "Get a complete software solution, perfectly integrated with your business needs. From concept to launch, we provide a full package that combines innovation, efficiency, and ongoing support. Your technology solution, ready to perform at every level."
+		}
+	}
 }

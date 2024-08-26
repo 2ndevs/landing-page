@@ -1,13 +1,30 @@
 {
-  "header": {
-    "highlights": "Destaques",
-    "projects": "Projetos"
-  },
-  "hero": {
-    "introducing": "Conheça 2n Devs",
-    "title": "Software sob Medida e de Alta Performance para o ",
-    "title-highlight": "SEU NEGÓCIO.",
-    "subtitle": "Soluções inovadoras e personalizadas, desenvolvidas com as tecnologias mais avançadas para atender às suas necessidades.",
-    "actionButton": "Entre em contato"
-  }
+	"header": {
+		"highlights": "Destaques",
+		"projects": "Projetos"
+	},
+	"hero": {
+		"introducing": "Conheça 2n Devs",
+		"title": "Software sob Medida e de Alta Performance para o ",
+		"title-highlight": "SEU NEGÓCIO.",
+		"subtitle": "Soluções inovadoras e personalizadas, desenvolvidas com as tecnologias mais avançadas para atender às suas necessidades.",
+		"actionButton": "Entre em contato"
+	},
+	"our-services": {
+		"subtitle": "Nossos serviços",
+		"title": "O que podemos fazer para você",
+		"paragraph": "Descubra o Serviço Perfeito para suas necessidades. Seja uma solução de software personalizada, uma landing page poderosa ou um produto completo adaptado ao seu negócio, nós temos o que você precisa.",
+		"custom-softwares": {
+			"title": "Software customizado",
+			"paragraph": "Transforme sua ideia em uma solução de software única. Desenvolvemos aplicativos personalizados que atendem às necessidades específicas do seu negócio, com desempenho de alta qualidade e total adaptabilidade. Deixe-nos ajudar a impulsionar seu sucesso com uma tecnologia feita sob medida para você."
+		},
+		"landing-page": {
+			"title": "Landing page",
+			"paragraph": "Maximize sua presença online com uma landing page impactante e eficaz. Nós criamos páginas de destino otimizadas para conversão, que capturam a essência do seu produto ou serviço. Alcance seu público de forma direta e poderosa, com design atraente e funcionalidade de ponta."
+		},
+		"complete-softwares": {
+			"title": "Software completo",
+			"paragraph": "Obtenha uma solução completa de software, perfeitamente integrada com as necessidades do seu negócio. Desde a concepção até o lançamento, oferecemos um pacote completo que une inovação, eficiência e suporte contínuo. A sua solução tecnológica pronta para operar em todos os níveis."
+		}
+	}
 }
